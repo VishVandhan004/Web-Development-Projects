@@ -1,0 +1,46 @@
+body{
+   margin:0;  /* margin is used to decrease the vacant area surrounding it on all the 4 sides..*/
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
+}
+h1{
+ /*   margin-top: 0;  used to decrease the vacant area on the top..*/
+    /* width:10%; */
+    /* margin: 0 auto 0 auto; */
+    /* here in this we are centering the h1 tag by using all the 4 props -> 0 in top, auto in right, 0 in bottom, auto in left. */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4.6875rem ;
+    margin-top: 50px;
+    color:#031515;
+}
+ h2{
+    font-family:cursive;
+    font-size:1.5rem;
+    color:#031515;
+    font-weight:bold;
+ }
+.top {
+    background-color:mediumaquamarine;
+    position: relative;
+    padding-top: 75px;
+}
+.middle {
+    font-family: sans-serif;
+}
+.bottom {
+font-family: sans-serif;
+}
+.Ctop{
+    margin-left: 50%;
+}
+.Cbottom {
+    position: absolute;
+    left: 20%;
+}
+.photo {
+    height: 300px;
+    margin-top: 2%;
+}
+.profile {
+    font-family: sans-serif;
+}
