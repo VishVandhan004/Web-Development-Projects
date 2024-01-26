@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter - Convert your Currency</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:ital@1&display=swap");
+      *{
+        margin: 0;
+        padding:0;
+      }
+      .container {
+        min-height: 100vh;
+        font-family: "Poppins", sans-serif;
+      }
+      footer {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+      nav {
+        display: flex;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        background-color: antiquewhite;
+        padding: 23px;
+      }
+      nav li a{
+        text-decoration: none; /* Used to remove unnecessary blue line shit*/
         
+      }
+      div.logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 23px;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul {
+        display: flex;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-
+      <div class="logo">MyCurrencyConverter</div>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
     </nav>
-    <div class="container">
-
-    </div>
-    <footer>
-
-    </footer>
-</body>
+    <div class="container"></div>
+    <footer>Copyright &copy; All rights reserved</footer>
+    <script src="main.js"></script>
+  </body>
 </html>
