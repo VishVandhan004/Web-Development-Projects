@@ -34,6 +34,12 @@ To use the Currency Converter, follow these steps:
 3. Click the "Submit" button.
 4. The converted values in different currencies will be displayed in the table below.
 
+## API Used
+
+The Currency Converter utilizes the Currency Conversion API from [currencyapi.com](https://currencyapi.com). This API is a perfect tool for handling exchange rate conversions, providing support for both current and historical foreign exchange rates.
+
+For more information about the Currency Conversion API, visit [Currency Conversion API - currencyapi.com](https://currencyapi.com).
+
 ## Technologies Used
 
 - HTML
@@ -49,3 +55,11 @@ If you would like to contribute to the Currency Converter project, please follow
 3. Make your changes and commit them.
 4. Push your changes to your forked repository.
 5. Submit a pull request to the main repository.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+
+If you have any questions or feedback, please feel free to contact us at [your-email@example.com].
