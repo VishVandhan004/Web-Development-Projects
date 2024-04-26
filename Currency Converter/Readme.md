@@ -25,7 +25,7 @@ To use the Currency Converter, follow these steps:
    cd currency-converter
    ```
 
-3. Open the `index.html` file in your preferred web browser.
+3. Open the `code.html` file in your preferred web browser.
 
 ## Usage
 
