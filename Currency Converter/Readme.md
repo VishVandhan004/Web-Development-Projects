@@ -55,11 +55,3 @@ If you would like to contribute to the Currency Converter project, please follow
 3. Make your changes and commit them.
 4. Push your changes to your forked repository.
 5. Submit a pull request to the main repository.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-If you have any questions or feedback, please feel free to contact us at [your-email@example.com].
