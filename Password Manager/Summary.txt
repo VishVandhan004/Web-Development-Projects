@@ -1,0 +1,10 @@
+We are building a password manager..
+
+A user can store their username, passwords and save them accordingly of different websites..
+
+We use tables to store the passwords and username
+From these tables, we can copy the details or delete the details
+
+For adding the passwords, we use the forms. We need to fill out the details in the forms and finally submit it
+
+ 
