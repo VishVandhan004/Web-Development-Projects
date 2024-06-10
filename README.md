@@ -2,12 +2,6 @@
 
 🌐 **Introduction:** Welcome to the future of web development ! Dive into a world of cutting-edge technologies and innovative solutions that will revolutionize the way you build websites.
 
-### Features at a Glance
-
-🚀 **Tech Stack:** Explore the powerful technologies powering [Your Web Project Name], from front-end frameworks to back-end databases. Get ready to unleash the full potential of modern web development.
-
-💡 **Key Features:** Discover the standout features that set [Your Web Project Name] apart from the rest. From responsive design to seamless animations, we've got everything you need to create stunning web experiences.
-
 ### Getting Started
 
 🔧 **Installation:** Setting up the projects are a breeze! Follow our step-by-step installation guide to get your development environment up and running in no time.
