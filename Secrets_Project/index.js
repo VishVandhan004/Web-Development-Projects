@@ -1,3 +1,4 @@
+// this is a capstone project. It asks you to type a password in the HTML Form. After you type the correct password, it will redirect you to a different HTML Page and show some info. we need to use express.js to do this. the correct password is ILoveProgramming
 import express from "express";
 import bodyParser from "body-parser";
 import { dirname } from "path";
