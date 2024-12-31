@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
-app.use(express.static("public"));
+app.use(express.static("public")); // express middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
@@ -16,6 +16,7 @@ app.post("/submit", (req, res) => {
   // there are 2 arrays of adjectives and nouns listed at bottom. we need to select a random adjective and a random noun and combine them and give the answer. this is the project.
   const randomAdj = adj[Math.floor(Math.random() * adj.length)];
   const randomNoun = noun[Math.floor(Math.random() * noun.length)];
+  // render the index.ejs page and pass the adjective and noun.
   res.render("index.ejs", {
     adjective: randomAdj,
     noun: randomNoun,

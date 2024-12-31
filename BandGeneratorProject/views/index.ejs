@@ -1,5 +1,5 @@
 <%- include("partials/index-header.ejs") %>
-
+<!-- we are providing the data from another file, so we are using locals to provide data as variable.. -->
   <% if (locals.adjective && locals.noun) { %>
     <h1>
       <%= adjective %>
@@ -8,12 +8,7 @@
     <% } else { %>
       <h1>Welcome to the Band Generator 🤟</h1>
       <% } %>
-
-
-
         <form action="/submit" method="POST">
           <input type="submit" value="Generate Name">
         </form>
-
-
 <%- include("partials/index-footer.ejs") %>
