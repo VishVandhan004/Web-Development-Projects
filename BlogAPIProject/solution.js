@@ -1,3 +1,4 @@
+// this repsonds to API requests, it runs only after server is started. keep 2 terminals and run 2 localhosts simultaenously.
 import express from "express";
 import bodyParser from "body-parser";
 

@@ -1,3 +1,4 @@
+// this makes the API requests, this is the server for your backend , firstly run this and run the solution.js later
 import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
