@@ -5,6 +5,7 @@
       <%= listTitle %>
     </h1>
   </div>
+  <!-- the items will be stored here... -->
   <div class="box">
     <% for(let item of listItems){%>
       <div class="item">
@@ -27,7 +28,7 @@
             src="/assets/icons/pencil-solid.svg" alt="pencil image"></button>
       </div>
       <% } %>
-
+<!-- new item will be created here to /add route.. and will be sent to the solution.js -->
         <form class="item" action="/add" method="post">
           <input type="text" name="newItem" placeholder="New Item" autocomplete="off" autofocus="true" />
           <button class="add" type="submit" name="list" value=<%=listTitle %> >+</button>
