@@ -51,7 +51,7 @@ app.post("/add", async (req, res) => {
     console.log(err);
   }
 });
-
+// UPDATE OPERATION
 app.post("/edit", async (req, res) => {
   const item = req.body.updatedItemTitle;
   const id = req.body.updatedItemId;

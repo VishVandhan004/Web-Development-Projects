@@ -24,6 +24,7 @@
           <button id="done<%=item.id%>" class="edit" type="submit" hidden><img class="icon"
               src="/assets/icons/check-solid.svg" alt="tick image"></button>
         </form>
+        <!-- THE UPDATE OPERATION HAPPENS BY THE BUTTON BELOW.. IT SENDS IT TO /edit route to the solution.js(server) -->
         <button id="edit<%=item.id%>" class="edit" onclick="handler('<%=item.id%>')"><img class="icon"
             src="/assets/icons/pencil-solid.svg" alt="pencil image"></button>
       </div>
