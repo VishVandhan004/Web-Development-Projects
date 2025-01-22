@@ -52,10 +52,10 @@ app.post("/add", async (req, res) => {
   }
 });
 // UPDATE OPERATION
+// we get the item tile and item id to check the items and update it..
 app.post("/edit", async (req, res) => {
   const item = req.body.updatedItemTitle;
   const id = req.body.updatedItemId;
-
   try {
     await db.query("UPDATE items SET title = ($1) WHERE id = $2", [item, id]);
     res.redirect("/");
@@ -63,7 +63,8 @@ app.post("/edit", async (req, res) => {
     console.log(err);
   }
 });
-
+// DELETE OPERATION
+// the deleteitemid will be reveived here from the index.ejs file.
 app.post("/delete", async (req, res) => {
   const id = req.body.deleteItemId;
   try {

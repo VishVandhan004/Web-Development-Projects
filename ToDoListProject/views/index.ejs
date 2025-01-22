@@ -9,6 +9,7 @@
   <div class="box">
     <% for(let item of listItems){%>
       <div class="item">
+        <!-- DELETE OPERATION HAPPENS HERE.. it sends it to the /delete route to the server..id will be sent  -->
         <form action="/delete" method="post">
           <input type="checkbox" onchange="this.form.submit()" name="deleteItemId" value="<%= item.id %>">
         </form>
@@ -29,7 +30,7 @@
             src="/assets/icons/pencil-solid.svg" alt="pencil image"></button>
       </div>
       <% } %>
-<!-- new item will be created here to /add route.. and will be sent to the solution.js -->
+<!-- new item will be created here to /add route.. and will be sent to the solution.js CREATE OPERATION HAPPENS HERE..-->
         <form class="item" action="/add" method="post">
           <input type="text" name="newItem" placeholder="New Item" autocomplete="off" autofocus="true" />
           <button class="add" type="submit" name="list" value=<%=listTitle %> >+</button>
