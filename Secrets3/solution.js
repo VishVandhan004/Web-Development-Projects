@@ -90,13 +90,14 @@ app.get("/secrets", async (req, res) => {
 
 ////////////////SUBMIT GET ROUTE/////////////////
 app.get("/submit", function (req, res) {
+  // only if the user is authenticated, we can show the submit.ejs file or else not..
   if (req.isAuthenticated()) {
     res.render("submit.ejs");
   } else {
     res.redirect("/login");
   }
 });
-
+// it is used for google sign in...
 app.get(
   "/auth/google",
   passport.authenticate("google", {
@@ -159,11 +160,12 @@ app.post("/submit", async function (req, res) {
   const submittedSecret = req.body.secret;
   console.log(req.user);
   try {
+    // we update the users as we are adding new users...
     await db.query(`UPDATE users SET secret = $1 WHERE email = $2`, [
       submittedSecret,
-      req.user.email,
+      req.user.email, // we get the user's email...
     ]);
-    res.redirect("/secrets");
+    res.redirect("/secrets");// render the secrets route..
   } catch (err) {
     console.log(err);
   }
