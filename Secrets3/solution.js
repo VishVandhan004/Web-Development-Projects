@@ -1,9 +1,14 @@
+// import the express packages and pg packages..
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
+// import bcrypt for hashing...
 import bcrypt from "bcrypt";
+// import passport for authentication...
 import passport from "passport";
+// import strategy for passport
 import { Strategy } from "passport-local";
+// import google strategy for google o auth
 import GoogleStrategy from "passport-google-oauth2";
 import session from "express-session";
 import env from "dotenv";
