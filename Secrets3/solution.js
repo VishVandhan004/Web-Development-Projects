@@ -11,13 +11,14 @@ import { Strategy } from "passport-local";
 // import google strategy for google o auth
 import GoogleStrategy from "passport-google-oauth2";
 import session from "express-session";
+// import env for security and privacy..
 import env from "dotenv";
-
+// express app
 const app = express();
 const port = 3000;
 const saltRounds = 10;
-env.config();
-
+env.config(); // initalize the env...
+// it is useful for session management..
 app.use(
   session({
     secret: process.env.SESSION_SECRET,
@@ -25,12 +26,13 @@ app.use(
     saveUninitialized: true,
   })
 );
+// express middleware..
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-
+// passport initialization
 app.use(passport.initialize());
 app.use(passport.session());
-
+// db credentials..
 const db = new pg.Client({
   user: process.env.PG_USER,
   host: process.env.PG_HOST,
@@ -39,28 +41,28 @@ const db = new pg.Client({
   port: process.env.PG_PORT,
 });
 db.connect();
-
+// renders the home page
 app.get("/", (req, res) => {
   res.render("home.ejs");
 });
-
+// renders the login page..
 app.get("/login", (req, res) => {
   res.render("login.ejs");
 });
-
+// renders the register page..
 app.get("/register", (req, res) => {
   res.render("register.ejs");
 });
-
+// it is used to logout 
 app.get("/logout", (req, res) => {
-  req.logout(function (err) {
+  req.logout(function (err) {// req.logout is used for logout..
     if (err) {
       return next(err);
     }
     res.redirect("/");
   });
 });
-
+// it gets the secrets page..
 app.get("/secrets", async (req, res) => {
   console.log(req.user);
 
@@ -117,7 +119,7 @@ app.post(
     failureRedirect: "/login",
   })
 );
-
+// this is the post request for submitting the details and saving it into the db...
 app.post("/register", async (req, res) => {
   const email = req.body.username;
   const password = req.body.password;
@@ -166,7 +168,7 @@ app.post("/submit", async function (req, res) {
     console.log(err);
   }
 });
-
+// this is the local strategy..
 passport.use(
   "local",
   new Strategy(async function verify(username, password, cb) {
@@ -197,7 +199,7 @@ passport.use(
     }
   })
 );
-
+// this is the google strategy.. we use the clientid and clientsecret from google auth 
 passport.use(
   "google",
   new GoogleStrategy(
