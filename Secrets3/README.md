@@ -79,6 +79,21 @@ nodemon solution.js
 http://localhost:3000
 ```
 
+---
+
+## 🖼️ Screenshots  
+
+### 🔐 Login Page  
+![Login Page](screenshots/login.png)  
+
+### 🏠 Home Page  
+![Home Page](screenshots/home.png)  
+
+### 📝 Register Page  
+![Submit Page](screenshots/register.png)  
+
+---
+
 ## 🔑 Authentication Flow  
 1️⃣ **Register/Login** using email/password or Google OAuth.  
 2️⃣ **Session Management** keeps users logged in.  
