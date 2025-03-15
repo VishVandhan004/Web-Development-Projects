@@ -1,7 +1,7 @@
-# QR Code Generator
+# QRify: Instant QR Code Generator 🚀🔗
 
 ## Overview
-This is a simple Node.js application that generates a QR code from a user-provided URL and saves it as an image file. Additionally, the input URL is stored in a text file for reference.
+**QRify** is a lightweight and efficient QR code generator built with **Node.js**, leveraging the **inquirer** package for user input and **qr-image** for QR code generation. It allows users to instantly convert any URL into a QR code and saves the input in a text file for reference. With a simple command-line interface, QRify ensures a seamless and automated way to generate QR codes for quick access and sharing.
 
 ## Features
 - Prompt user for a URL using `inquirer`.
