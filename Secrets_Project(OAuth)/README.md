@@ -1,6 +1,6 @@
-# 🔐 Secrets Authentication App  
+# 🔐 SecretVault - Sharing Secrets Anonymously
 
-A secure authentication web application built using **Node.js, Express, PostgreSQL, Passport.js, and EJS templating** to allow users to securely log in, register, and submit anonymous secrets.
+SecretVault Authentication App is a secure web application enabling users to register, log in, and share anonymous secrets with robust authentication. Built with **Node.js, Express, PostgreSQL, and Passport.js**, it supports **bcrypt-hashed passwords** and **Google OAuth** for seamless authentication. The application ensures **session security** using **express-session** and follows best practices for **data protection and user privacy**. With **EJS templating** for dynamic UI rendering, it delivers a smooth user experience. Future enhancements include **email verification, password reset, and user profiles** to strengthen security and functionality.
 
 ## 🚀 Features  
 ✅ **User Authentication:** Supports local login with **bcrypt hashing** and **Google OAuth** authentication.  
