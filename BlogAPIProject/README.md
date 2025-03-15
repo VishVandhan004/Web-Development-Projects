@@ -1,7 +1,8 @@
-# Blog Post Management System
+# BlogSphere - Blog Post Management System
+
 
 ## Overview
-This project is a simple blog post management system that consists of a backend API and a frontend server for handling user interactions. The system allows users to create, update, delete, and view blog posts. It consists of two main components:
+BlogSphere is a robust and scalable blog post management system designed for seamless content creation, editing, and deletion. Built with Express.js and PostgreSQL, it ensures efficient data handling and a structured backend for managing blog posts. The system leverages EJS templates to deliver a dynamic and user-friendly interface. Ideal for content-driven applications, BlogSphere simplifies blog management while maintaining flexibility and performance. It consists of two main components:
 
 1. **Backend API (`solution.js`)** - Handles API requests related to blog posts.
 2. **Frontend Server (`server.js`)** - Serves the user interface and communicates with the backend API.
