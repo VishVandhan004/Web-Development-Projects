@@ -127,4 +127,4 @@ http://localhost:3000
 ---
 
 ### 🎯 Developed by **Vishnu Vandhan**  
-🔗 GitHub: [yourgithub](https://github.com/VishVandhan004)  
+🔗 GitHub: [Vishnu](https://github.com/VishVandhan004)  
