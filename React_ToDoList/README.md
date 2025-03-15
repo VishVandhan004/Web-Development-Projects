@@ -1,6 +1,6 @@
-# React To-Do List  
+# TaskFlow - A Modern To-Do List App
 
-This is a simple **To-Do List** application built using **React.js**. It allows users to add tasks dynamically and displays them in a list format.  
+The **TaskFlow - A Modern To-Do List App** is a simple and interactive task management application built using **React.js, JavaScript (ES6), HTML, and CSS**. It allows users to dynamically add and manage tasks with a seamless UI experience. The app leverages **React’s state management** for real-time updates and ensures a smooth workflow by automatically clearing input fields after adding tasks. With a **modular component-based structure**, it is designed for scalability and easy customization. Future enhancements include **task deletion, local storage integration, and a completion tracking system** for improved functionality.
 
 ## Features  
 ✅ Add new tasks to the to-do list  
