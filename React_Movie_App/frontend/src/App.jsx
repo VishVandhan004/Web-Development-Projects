@@ -7,9 +7,12 @@ function App() {
   return (
     // only one parent element is allowed in the return statement
     // the below is the parent element
+    // the below is the fragment, it is used to handle multiple divs without a parent div
+    <>
       <div>
         
       </div>
+    </>
   )
 }
 
