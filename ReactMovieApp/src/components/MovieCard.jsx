@@ -1,6 +1,9 @@
-import "../css/MovieCard.css"
+import "../css/MovieCard.css" // import the css
 import { useMovieContext } from "../contexts/MovieContext"
 
+// this function displays the movie card
+// it takes the movie object as a prop
+// it displays the movie poster, title, release date and a favorite button
 function MovieCard({movie}) {
     const {isFavorite, addToFavorites, removeFromFavorites} = useMovieContext()
     const favorite = isFavorite(movie.id)
