@@ -25,6 +25,7 @@ function MovieCard({movie}) {
                 </button>
             </div>
         </div>
+         {/* this div contains the movie title and release date and it is present inside the movie card */}
         <div className="movie-info">
             <h3>{movie.title}</h3>
             <p>{movie.release_date?.split("-")[0]}</p>
