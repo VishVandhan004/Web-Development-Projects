@@ -16,6 +16,7 @@ function MovieCard({movie}) {
 // this div displays the movie card
     return <div className="movie-card">
         <div className="movie-poster">
+             {/* the image is put dynamically, so we use curly braces in the src.. */}
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
             <div className="movie-overlay">
                 <button className={`favorite-btn ${favorite ? "active" : ""}`} onClick={onFavoriteClick}>
