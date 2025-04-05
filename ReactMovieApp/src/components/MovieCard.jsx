@@ -13,7 +13,7 @@ function MovieCard({movie}) {
         if (favorite) removeFromFavorites(movie.id)
         else addToFavorites(movie)
     }
-
+// this div displays the movie card
     return <div className="movie-card">
         <div className="movie-poster">
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
