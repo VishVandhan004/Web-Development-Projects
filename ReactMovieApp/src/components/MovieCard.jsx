@@ -7,7 +7,7 @@ import { useMovieContext } from "../contexts/MovieContext"
 function MovieCard({movie}) {
     const {isFavorite, addToFavorites, removeFromFavorites} = useMovieContext()
     const favorite = isFavorite(movie.id)
-
+// the below function is called when the user clicks on the favorite button , onclickevent gets triggered...
     function onFavoriteClick(e) {
         e.preventDefault()
         if (favorite) removeFromFavorites(movie.id)
@@ -18,6 +18,7 @@ function MovieCard({movie}) {
         <div className="movie-poster">
              {/* the image is put dynamically, so we use curly braces in the src.. */}
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
+            {/* this div contains a button which allows us to like the movie */}
             <div className="movie-overlay">
                 <button className={`favorite-btn ${favorite ? "active" : ""}`} onClick={onFavoriteClick}>
                     ♥
