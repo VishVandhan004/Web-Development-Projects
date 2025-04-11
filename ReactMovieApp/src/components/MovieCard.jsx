@@ -27,6 +27,7 @@ function MovieCard({movie}) {
         </div>
          {/* this div contains the movie title and release date and it is present inside the movie card */}
         <div className="movie-info">
+            {/* we are collecting the props and getting the movie name by using the curly braces and specifying the title.. */}
             <h3>{movie.title}</h3>
             <p>{movie.release_date?.split("-")[0]}</p>
         </div>
