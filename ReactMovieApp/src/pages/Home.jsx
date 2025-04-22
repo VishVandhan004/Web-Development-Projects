@@ -2,7 +2,7 @@ import MovieCard from "../components/MovieCard";
 import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
 import "../css/Home.css";
-
+// this contains the whole UI of home page
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
@@ -63,6 +63,7 @@ function Home() {
       {loading ? (
         <div className="loading">Loading...</div>
       ) : (
+        // we use map to iterate over the movies array and create a MovieCard for each movie
         <div className="movies-grid">
           {movies.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />
