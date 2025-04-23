@@ -1,3 +1,4 @@
+// import the moviecard to create cards for movies...
 import MovieCard from "../components/MovieCard";
 import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
@@ -64,6 +65,10 @@ function Home() {
         <div className="loading">Loading...</div>
       ) : (
         // we use map to iterate over the movies array and create a MovieCard for each movie
+        // enclose it in parantheses to return the value
+        // we use the key prop to give a unique key to each movie card
+        // we use the movie.id as the key
+        // we use the movie prop to pass the movie object to the MovieCard component
         <div className="movies-grid">
           {movies.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />
