@@ -50,6 +50,9 @@ function Home() {
 
     setLoading(true)
     try {
+      // the below function is used to search for movies
+      // it will call the searchMovies function and pass the searchQuery as a parameter
+      // it will return the movies that match the search query
         const searchResults = await searchMovies(searchQuery)
         setMovies(searchResults)
         setError(null)
