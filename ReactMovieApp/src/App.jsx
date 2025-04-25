@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 // import the routes to implement the /home, /favorites, etc..
 import { Routes, Route } from "react-router-dom";
 import { MovieProvider } from "./contexts/MovieContext";
+// import the navbar component
 import NavBar from "./components/NavBar";
 
 function App() {
