@@ -1,3 +1,4 @@
+// this page contains the favorites page of the movie app
 import "../css/Favorites.css";
 import { useMovieContext } from "../contexts/MovieContext";
 import MovieCard from "../components/MovieCard";

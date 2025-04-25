@@ -13,7 +13,9 @@ function App() {
       <NavBar />
       <main className="main-content">
         <Routes>
+          {/* the below route is used to implement the /home */}
           <Route path="/" element={<Home />} />
+          {/* the below route is used to implement the /favorites */}
           <Route path="/favorites" element={<Favorites />} />
         </Routes>
       </main>
