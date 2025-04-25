@@ -70,11 +70,7 @@ npm install
 
 ### 3. Add your TMDb API key
 
-Create a `.env` file in the root directory and insert your API key:
-
-```env
-VITE_TMDB_API_KEY=your_tmdb_api_key_here
-```
+Go to the api.js file in the services folder and add your API Key.
 
 > You can get an API key by signing up at [TMDb Developer Portal](https://www.themoviedb.org/documentation/api).
 
