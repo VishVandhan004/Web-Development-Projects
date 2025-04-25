@@ -1,10 +1,13 @@
 // import the moviecard to create cards for movies...
 import MovieCard from "../components/MovieCard";
+// the below are react hooks to manage the state of the component
 import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
 import "../css/Home.css";
 // this contains the whole UI of home page
 function Home() {
+  // searchQuery is used to store the value of the search input
+  // setSearchQuery is used to update the value of the search input
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
@@ -27,7 +30,7 @@ function Home() {
   }, []);
 
   const handleSearch = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // it used to prevent to update the page and refreshing..
     if (!searchQuery.trim()) return
     if (loading) return
 
@@ -46,6 +49,7 @@ function Home() {
 
   return (
     <div className="home">
+      {/* the below form component is used to search for movies.. */}
       <form onSubmit={handleSearch} className="search-form">
         <input
           type="text"
