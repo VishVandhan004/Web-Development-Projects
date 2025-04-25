@@ -2,6 +2,7 @@ import "./css/App.css";
 import Favorites from "./pages/Favorites";
 // import the home component
 import Home from "./pages/Home";
+// import the routes to implement the /home, /favorites, etc..
 import { Routes, Route } from "react-router-dom";
 import { MovieProvider } from "./contexts/MovieContext";
 import NavBar from "./components/NavBar";
