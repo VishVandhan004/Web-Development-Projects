@@ -34,7 +34,7 @@ A responsive and modern **React** application that allows users to **search movi
 <!-- Replace with your actual screenshots -->
 | Home Page | Favorites |
 |----------|-----------|
-| ![Home Screenshot](screenshots/home.png) | ![Favorites Screenshot](screenshots/favorites.png) |
+| ![Home Screenshot](src/assets/home.jpg) | ![Favorites Screenshot](src/assets/favorite.jpg) |
 
 ---
 
@@ -44,7 +44,6 @@ A responsive and modern **React** application that allows users to **search movi
 - **Build Tool:** Vite
 - **State Management:** useState, useEffect, Context API
 - **API:** [TMDb API](https://developers.themoviedb.org/)
-- **Hosting:** [Your hosting platform, e.g., Netlify/Vercel]
 
 ---
 
@@ -158,16 +157,10 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 👤 Author
 
 **Your Name**  
-🔗 [GitHub](https://github.com/yourusername)  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile)  
-📧 your.email@example.com
+Vishnu Vandhan Talakokkula
+🔗 [GitHub](https://github.com/VishVandhan004)  
 
