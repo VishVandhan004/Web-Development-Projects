@@ -1,3 +1,6 @@
+// ths file is responsible for managing the state of the movie favorites
+// and providing functions to add, remove, and check if a movie is a favorite
+// it uses the useContext and useState hooks from React to manage the state
 import {createContext, useState, useContext, useEffect} from "react"
 
 const MovieContext = createContext()
