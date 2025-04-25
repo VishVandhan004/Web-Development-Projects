@@ -1,11 +1,11 @@
 # 🎬 CineScope - The Ultimate Movie Explorer
 
-> CineScope is a sleek and responsive movie discovery platform built using modern React and Vite technologies.  
-> Users can seamlessly browse trending films, search for titles from a vast movie database, and curate a personalized list of favorites.  
-> The application integrates with the powerful TMDb (The Movie Database) API to deliver real-time, high-quality movie data.  
-> Featuring an intuitive interface and smooth navigation, CineScope ensures an engaging user experience across devices.  
-> With built-in global state management using Context API, your interactions and preferences stay consistent throughout the app.  
-> Designed for performance and scalability, CineScope is the perfect foundation for any advanced movie browsing project.  
+- CineScope is a sleek and responsive movie discovery platform built using modern React and Vite technologies.  
+- Users can seamlessly browse trending films, search for titles from a vast movie database, and curate a personalized list of favorites.  
+- The application integrates with the powerful TMDb (The Movie Database) API to deliver real-time, high-quality movie data.  
+- Featuring an intuitive interface and smooth navigation, CineScope ensures an engaging user experience across devices.  
+- With built-in global state management using Context API, your interactions and preferences stay consistent throughout the app.  
+- Designed for performance and scalability, CineScope is the perfect foundation for any advanced movie browsing project.  
 
 ---
 
