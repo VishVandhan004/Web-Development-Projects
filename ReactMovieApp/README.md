@@ -159,8 +159,6 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 
 
 ## 👤 Author
-
-**Your Name**  
 Vishnu Vandhan Talakokkula
 🔗 [GitHub](https://github.com/VishVandhan004)  
 
