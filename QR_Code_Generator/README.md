@@ -38,7 +38,7 @@ npm install inquirer qr-image fs
 1. Open a terminal and navigate to the project folder.
 2. Run the following command:
 ```sh
-node index.js
+nodemon index.js
 ```
 3. Enter a URL when prompted.
 4. The QR code image will be generated as `qr_img.png`.
