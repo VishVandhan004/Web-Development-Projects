@@ -1,18 +1,24 @@
-const API_KEY = ""; // add your api key here
-// you can get your api key from https://www.themoviedb.org/documentation/api
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config();
+
+// eslint-disable-next-line no-undef
+const API_KEY = process.env.REACT_APP_API_KEY;  // Access the key
+
 const BASE_URL = "https://api.themoviedb.org/3";
-// function to get the popular movies
+
+// Function to get popular movies
 export const getPopularMovies = async () => {
   const response = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}`);
   const data = await response.json();
   return data.results;
 };
-// function to search for the movies, it will take a query..
+
+// Function to search for movies
 export const searchMovies = async (query) => {
   const response = await fetch(
-    `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(
-      query
-    )}`
+    `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${encodeURIComponent(query)}`
   );
   const data = await response.json();
   return data.results;
