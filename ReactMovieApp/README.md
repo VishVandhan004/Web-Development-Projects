@@ -9,6 +9,10 @@
 - The App is deployed using Vercel.
 
 ---
+## 🚀 Deployed Application
+[Click here to view the live app!](https://vishnus-react-movie-app.vercel.app/)
+
+---
 
 ## 📌 Table of Contents
 
@@ -38,7 +42,6 @@
 
 ## 📸 Screenshots
 
-<!-- Replace with your actual screenshots -->
 | Home Page | Favorites |
 |----------|-----------|
 | ![Home Screenshot](src/assets/home.jpg) | ![Favorites Screenshot](src/assets/favorite.jpg) |
@@ -138,11 +141,6 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 - **Add to Favorites:** Click the ❤️ icon on any movie card to add it to your favorites list.
 - **View Favorites:** Favorites are accessible in a dedicated section.
 - **Remove from Favorites:** Click the ❤️ again to remove from favorites.
-
----
-
-## 🚀 Deployed Application
-[Click here to view the live app!](https://vishnus-react-movie-app.vercel.app/)
 
 ---
 
