@@ -1,6 +1,6 @@
 # TaskFlow - A Modern To-Do List App
 
-The **TaskFlow - A Modern To-Do List App** is a simple and interactive task management application built using **React.js, JavaScript (ES6), HTML, and CSS**. It allows users to dynamically add and manage tasks with a seamless UI experience. The app leverages **React’s state management** for real-time updates and ensures a smooth workflow by automatically clearing input fields after adding tasks. With a **modular component-based structure**, it is designed for scalability and easy customization. Future enhancements include **task deletion, local storage integration, and a completion tracking system** for improved functionality.
+The **TaskFlow - A Modern To-Do List App** is a simple and interactive task management application built using **React.js, JavaScript (ES6), HTML, and CSS**. It allows users to dynamically add and manage tasks with a seamless UI experience. The app leverages **React’s state management** for real-time updates and ensures a smooth workflow by automatically clearing input fields after adding tasks. With a **modular component-based structure**, it is designed for scalability and easy customization. Future enhancements include **task deletion, local storage integration, and a completion tracking system** for improved functionality. The App is deployed using Vercel.
 
 ## Features  
 ✅ Add new tasks to the to-do list  
@@ -13,6 +13,7 @@ The **TaskFlow - A Modern To-Do List App** is a simple and interactive task mana
 - JavaScript (ES6)  
 - HTML  
 - CSS  
+- Vercel
 
 ## Installation  
 
@@ -57,6 +58,9 @@ React_ToDoList
 │── README.md            # Documentation
 ```
 
+## 🚀 Deployed Application
+[Click here to view the live app!](https://vishnus-react-to-do-list.vercel.app/)
+
 ## How It Works  
 1. The app maintains two state variables:  
    - `inputText` → Stores the text entered by the user.  
@@ -66,6 +70,7 @@ React_ToDoList
    - The `addItem` function updates the `items` state by adding the new task.  
    - The input field is cleared for new entries.  
 4. The app dynamically renders all tasks as a list using the `.map()` method.  
+
 
 ## Future Improvements  
 🔹 Add a **delete** button to remove tasks  
