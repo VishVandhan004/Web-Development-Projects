@@ -159,6 +159,10 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 
 ---
 
+## 🚀 Deployed Link
+[Click here to view the live app!](https://vishnus-react-movie-app.vercel.app/)
+
+---
 
 ## 👤 Author
 Vishnu Vandhan Talakokkula
