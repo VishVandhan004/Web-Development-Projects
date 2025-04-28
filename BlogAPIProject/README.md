@@ -1,11 +1,13 @@
 # BlogSphere - Blog Post Management System
 
-
 ## Overview
-BlogSphere is a robust and scalable blog post management system designed for seamless content creation, editing, and deletion. Built with Express.js and PostgreSQL, it ensures efficient data handling and a structured backend for managing blog posts. The system leverages EJS templates to deliver a dynamic and user-friendly interface. Ideal for content-driven applications, BlogSphere simplifies blog management while maintaining flexibility and performance. It consists of two main components:
+BlogSphere is a robust and scalable blog post management system designed for seamless content creation, editing, and deletion. Built with Express.js and PostgreSQL, it ensures efficient data handling and a structured backend for managing blog posts. The system leverages EJS templates to deliver a dynamic and user-friendly interface. Ideal for content-driven applications, BlogSphere simplifies blog management while maintaining flexibility and performance.The Website is deployed on Railway. It consists of two main components:
 
 1. **Backend API (`solution.js`)** - Handles API requests related to blog posts.
 2. **Frontend Server (`server.js`)** - Serves the user interface and communicates with the backend API.
+
+## 🚀 Deployed Application
+[Click here to view the live app!](https://vishnus-blog-posts.up.railway.app/)
 
 ## Features
 - Display a list of blog posts.
@@ -20,6 +22,7 @@ BlogSphere is a robust and scalable blog post management system designed for sea
 - Axios
 - Body-parser
 - EJS (Embedded JavaScript Templates)
+- Railway.
 
 ## Setup Instructions
 ### Prerequisites
