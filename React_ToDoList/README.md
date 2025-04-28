@@ -2,6 +2,9 @@
 
 The **TaskFlow - A Modern To-Do List App** is a simple and interactive task management application built using **React.js, JavaScript (ES6), HTML, and CSS**. It allows users to dynamically add and manage tasks with a seamless UI experience. The app leverages **React’s state management** for real-time updates and ensures a smooth workflow by automatically clearing input fields after adding tasks. With a **modular component-based structure**, it is designed for scalability and easy customization. Future enhancements include **task deletion, local storage integration, and a completion tracking system** for improved functionality. The App is deployed using Vercel.
 
+## 🚀 Deployed Application
+[Click here to view the live app!](https://vishnus-react-to-do-list.vercel.app/)
+
 ## Features  
 ✅ Add new tasks to the to-do list  
 ✅ View all tasks in a structured format  
@@ -58,8 +61,6 @@ React_ToDoList
 │── README.md            # Documentation
 ```
 
-## 🚀 Deployed Application
-[Click here to view the live app!](https://vishnus-react-to-do-list.vercel.app/)
 
 ## How It Works  
 1. The app maintains two state variables:  
