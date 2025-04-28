@@ -6,6 +6,7 @@
 - Featuring an intuitive interface and smooth navigation, CineScope ensures an engaging user experience across devices.  
 - With built-in global state management using Context API, your interactions and preferences stay consistent throughout the app.  
 - Designed for performance and scalability, CineScope is the perfect foundation for any advanced movie browsing project.  
+- The App is deployed using Vercel.
 
 ---
 
@@ -50,6 +51,7 @@
 - **Build Tool:** Vite
 - **State Management:** useState, useEffect, Context API
 - **API:** [TMDb API](https://developers.themoviedb.org/)
+- **Deployment:** Vercel
 
 ---
 
@@ -139,6 +141,11 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 
 ---
 
+## 🚀 Deployed Application
+[Click here to view the live app!](https://vishnus-react-movie-app.vercel.app/)
+
+---
+
 ## 🚧 Future Improvements
 
 - ✅ Add movie detail pages
@@ -159,10 +166,6 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 
 ---
 
-## 🚀 Deployed Link
-[Click here to view the live app!](https://vishnus-react-movie-app.vercel.app/)
-
----
 
 ## 👤 Author
 Vishnu Vandhan Talakokkula
