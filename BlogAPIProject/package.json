@@ -1,11 +1,11 @@
 {
-  "name": "6.1-blog-api-project",
+  "name": "blog-api-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A blog API project with frontend-backend and API-backend servers",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-server": "node server.js",
+    "start-api": "node solution.js"
   },
   "keywords": [],
   "author": "",
