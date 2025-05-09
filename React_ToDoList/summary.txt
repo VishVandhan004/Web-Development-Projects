@@ -1,0 +1,44 @@
+📝 Project Title: Simple React To-Do List App
+📌 Overview:
+This project is a basic to-do list web application built using React.js. It allows users to type in tasks, add them to a list, and display all entered tasks dynamically. The project focuses on fundamental concepts of React like component structure, state management using hooks, event handling, and rendering lists — making it a perfect demonstration of core front-end development skills.
+
+🧰 Tech Stack:
+Frontend Library: React.js
+JSX: For defining UI components declaratively
+Hooks: useState for state management
+Styling: Via external CSS file (styles.css, referenced in index.js)
+Tooling: Assumes usage of Create React App or similar React setup
+
+🛠️ Core Functionality:
+1. Real-time Input State Management
+useState is used to store the text that the user types into the input field.
+As the user types, the handleChange function captures the input and updates the inputText state.
+
+2. Adding Tasks to a List
+On clicking the "Add" button, the addItem function:
+Appends the current inputText to the items array (state).
+Clears the input field by resetting inputText to an empty string.
+Demonstrates immutability using the spread operator (...prevItems).
+
+3. Displaying Tasks Dynamically
+Uses the .map() method to render each item in the items array as a <li> element inside an unordered list (<ul>).
+This shows dynamic rendering based on state, a key React capability.
+
+🔄 Component Architecture:
+🔹 App.jsx
+Functional component using React Hooks.
+Contains the full logic for capturing input, updating state, and rendering UI.
+
+🔹 index.js
+Entry point that renders the <App /> component into the root DOM node.
+Also imports external styling and comments out the basic task requirements as learning objectives.
+
+🧠 Key React Concepts Demonstrated:
+Component-based Architecture: One main App component managing the entire UI logic.
+Hooks (useState): Manages internal state without needing class components.
+Controlled Components: Input field is tied to React state, ensuring controlled input handling.
+Rendering Lists: Uses .map() to dynamically generate DOM elements from an array.
+Event Handling: OnChange for input updates and onClick for form submission.
+
+🗣️ How to Explain in an Interview:
+"This to-do list app was one of my early React projects where I focused on mastering component structure, state management with useState, and dynamic UI updates. I implemented a controlled input field, used event handlers to track user input, and displayed real-time changes using state-driven rendering. It reinforced key React principles like immutability and reactivity, and gave me a solid foundation to build more complex components and features later on."
