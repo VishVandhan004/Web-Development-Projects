@@ -1,0 +1,77 @@
+Project Summary: Blog Management System
+Overview
+A full-stack blog application built with Express.js (backend) and EJS templates (frontend). The system allows users to:
+View, create, edit, and delete blog posts via a clean UI.
+Interact with a RESTful API (CRUD operations) backed by an in-memory data store.
+Separate concerns between frontend (server.js) and backend (solution.js) servers for modularity.
+
+Technical Stack
+Frontend- EJS (Embedded JavaScript templates), CSS
+Backend- Express.js, Axios (HTTP client)
+Data Store- In-memory array (simulated database)
+Routing - Express Router
+
+Architecture & Key Components
+1. Backend (solution.js)
+RESTful API with 5 core endpoints:
+GET /posts → Fetch all posts.
+GET /posts/:id → Fetch single post.
+POST /posts → Create new post.
+PATCH /posts/:id → Update post.
+DELETE /posts/:id → Delete post.
+
+In-Memory Data Store:
+Simulates a database using a posts array.
+Auto-increments lastId for new posts.
+
+Error Handling:
+Returns 404 for missing posts.
+
+2. Frontend (server.js)
+Proxy Server:
+Serves static files (CSS) and renders EJS templates.
+Communicates with the backend API via Axios.
+
+Routes:
+/ → Renders index.ejs with all posts.
+/new → Renders modify.ejs for post creation.
+/edit/:id → Renders modify.ejs with prefilled data.
+/api/posts* → Handles form submissions (create/update/delete).
+
+3. Templates (index.ejs, modify.ejs)
+Dynamic Rendering:
+index.ejs: Lists all posts with Edit/Delete buttons.
+modify.ejs: Reusable form for create/edit (conditionally renders fields).
+Styling: Linked to /styles/main.css (not shown but implied).
+
+Key Features & Workflow
+View Posts:
+User visits / → Frontend fetches posts from API_URL/posts → Renders index.ejs.
+
+Create Post:
+Clicks "New Post" → Renders empty form (/new) → Submits to /api/posts.
+
+Edit/Delete:
+Edit: Prefills form with post data → Submits to /api/posts/:id.
+
+Delete: Triggers GET /api/posts/delete/:id (redirects to /).
+
+Strengths
+Separation of Concerns:
+Frontend and backend run as independent servers (scalable).
+Modular Design:
+Single modify.ejs template handles both create/edit.
+Simplicity:
+Lightweight (no database dependency) but extensible.
+
+Interviewer Talking Points
+Why Two Servers?
+Demonstrates microservices-like architecture (frontend/backend decoupling).
+
+Error Handling:
+Gracefully handles API failures (e.g., 500 status codes).
+
+Security:
+Discuss risks of in-memory storage (data loss on crash) and mitigation strategies.
+
+This project showcases full-stack JavaScript proficiency, API design, and template rendering—ideal for discussing backend logic, frontend integration, and scalability.
