@@ -1,0 +1,58 @@
+CineScope - The Ultimate Movie Explorer
+Overview
+CineScope is a React-based single-page application (SPA) that allows users to explore movies, search for films, and manage a list of favorites. It leverages The Movie Database (TMDB) API to fetch movie data, including posters, titles, and release dates. The app features dynamic routing, state management with React Context, and persistent storage for user favorites using localStorage.
+
+Key Features & Functionality
+Movie Discovery
+Fetches and displays popular movies on the homepage.
+Search functionality to query movies by title.
+Responsive grid layout for movie cards.
+Favorites Management
+Users can add/remove movies to/from favorites.
+Favorites are persisted in localStorage for continuity across sessions.
+Dedicated /favorites route to view saved movies.
+
+UI/UX Highlights
+Clean, intuitive interface with a navigation bar (Home/Favorites).
+Loading states and error handling for API requests.
+Visual feedback (e.g., heart button toggles for favorites).
+
+Technical Stack
+Frontend: React (Vite), JSX, CSS Modules.
+State Management: React Context API for global state (favorites).
+Routing: React Router (BrowserRouter, Routes, Route).
+API Integration: Async calls to TMDB API (searchMovies, getPopularMovies).
+Persistence: localStorage for saving favorites.
+
+Architecture & Key Components
+1. Core Components
+App.jsx: Root component wrapping the app with MovieProvider (context) and routing.
+Home.jsx: Displays popular movies and handles search queries.
+Favorites.jsx: Renders the user's favorited movies.
+MovieCard.jsx: Reusable UI component for movie posters, titles, and favorite toggles.
+NavBar.jsx: Navigation links for Home/Favorites.
+
+2. State Management
+MovieContext.jsx:
+Manages the favorites array state.
+Provides methods: addToFavorites, removeFromFavorites, isFavorite.
+Syncs with localStorage via useEffect.
+
+3. Routing & Initialization
+main.jsx: Entry point with StrictMode, BrowserRouter, and root render.
+Routes:
+/: Homepage with movie grid.
+/favorites: Favorites list.
+
+4. API Services
+api.js (implied but not shown):
+
+Functions like getPopularMovies() and searchMovies() interact with TMDB API.
+
+Strengths
+Modular Design: Components are decoupled and reusable (e.g., MovieCard).
+Scalability: Context API simplifies state sharing; routes can be extended.
+User-Centric: Persistent favorites enhance engagement.
+
+Conclusion
+CineScope demonstrates proficiency in React hooks, context API, routing, and async data fetching, delivering a polished movie exploration app. Its focus on clean architecture and user experience makes it a strong example of modern frontend development.
