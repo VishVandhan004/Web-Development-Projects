@@ -1,0 +1,11 @@
+Frontend -> react.
+
+MERN -> Mongodb, Express.js, React.js, Node.js
+Mongodb is the database, Express.js is a web framework, React is a frontend library to build web apps, Node is a backend library.
+
+MongoDB is a NoSQL DB which is used to store and retrieve data effectively.
+
+Express.js is a web framework which is ready to use for building web apps faster and more easily.
+It saves time, makes code clean and organised, it handles common tasks like routing, error handling, etc.
+
+Node.js is a JS runtime, it allows you to run JS on server.
